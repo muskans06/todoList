@@ -6,7 +6,7 @@ const date= require(__dirname+"/date.js");
 
 const app = express();
 
-const items=["Buy food", "Cook food","Eat Food"];
+const items=["Get fresh", "Eat BreakFast","Study"];
 const workItems=[];
 app.set('view engine', 'ejs');
 
@@ -33,10 +33,6 @@ else{
   items.push(item);
     res.redirect("/");
 }
-
-
-
-
 })
 
 //for /work
