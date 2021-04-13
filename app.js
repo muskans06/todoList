@@ -59,6 +59,6 @@ app.get("/about", function(req,res){
 
 
 //server localhost port
-app.listen(3000||process.env.PORT, function() {
+app.listen(process.env.PORT||3000, function() {
   console.log("this server is running on port 3000");
 });
